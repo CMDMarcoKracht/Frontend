@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Aanmelden</title>
 </head>
 
 <body>
     <header>
-        <ul>
-            <li><a href="overzicht.html">Home</a></li>
-            <li><a href="detailpagina.html">Alle verhalen</a></li>
-            <li><a href="aanmelden.html">Aanmenden</a></li>
-        </ul>
-        <h1>99 reisverhalen</h1>
+        <a href="www.transavia.com/nl-NL/home/"><img src="images/ic_logo_transavia.png" alt="Transavia Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="overzicht.html">Home</a></li>
+                <li><a href="alleverhalen.html">Alle verhalen</a></li>
+                <li><a href="aanmelden.html">Aanmelden</a></li>
+            </ul>
+        </nav>
 
     </header>
 
-    Naam:
+    <form>
+        <fieldset>
+            <legend>Personlijke gegevens</legend>
+            <label><a>Voornaam</a></label>
+            <input type="text">
+            <br>
+            <label><a>Tussenvoegsel</a></label>
+            <input type="text">
+            <br>
+            <label><a>Achternaam</a></label>
+            <input type="text">
+            <br>
+            <label><a>E-mailadres</a></label>
+            <input type="text">
+            <br>
+        </fieldset>
 
-    <input type="text" name="voornaam" placeholder="Voornaam" required>
-
-    <input type="text" name="tussenvoegsel" placeholder="Tussenvoegsel">
-
-    <input type="text" name="achternaam" placeholder="Achternaam" required> Emailadres:
-
-    <input type="email" name="email" placeholder="Emailadres" required> Telefoonnummer:
-
-    <input type="number" name="phone" placeholder="Telefoonnummer" required> Woonplaats:
-
-    <input type="text" name="city" placeholder="Woonplaats" required> Postcode:
-
-    <input type="number" name="city" placeholder="0000" required>
-
-    <input type="text" name="city" placeholder="AA" required> Straat:
-
-    <input type="text" name="city" placeholder="straat" required> Huisnummer:
-
-    <input type="number" name="city" placeholder="Huisnummer" required> Wachtwoord:
-    <input type="text" name="wachtwoord" placeholder="Wachtwoord" required> Herhaalwachtwoord:
-
-    <input type="text" name="wachtwoord" placeholder="Herhaal Wachtwoord" required>
-
-
-
-    <button>Verder</button>
+        <fieldset>
+            <legend>Inlog gegevens</legend>
+            <label><a>Kies uw wachtwoord</a></label>
+            <input type="text">
+            <br>
+            <label><a>Bevestig wachtwoord</a></label>
+            <input type="text">
+            <br>
+        </fieldset>
+        <button>Aanmelden</button>
+    </form>
 </body>
 
 </html>
