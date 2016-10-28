@@ -198,8 +198,6 @@ nav a:hover {
     color: #322F8F;
 }
 
-.current {}
-
 
 /*
 ===== Zoeken op landingspagina =====
@@ -627,7 +625,6 @@ footer img {
     .groep {
         width: 80%;
     }
-    #zoeken {}
     aside {
         margin-right: 1em;
     }
@@ -679,7 +676,7 @@ footer img {
         width: 25em;
     }
     .verderlezen a {
-        width: 33.33vw;
+        width: 25vw;
     }
 }
 
@@ -695,8 +692,8 @@ footer img {
     .persoonlijk {
         width: 100%;
     }
-    ..verderlezen a {
-        width: 33.33vw;
+    .verderlezen a {
+        width: 25vw;
     }
 }
 
