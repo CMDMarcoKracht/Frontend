@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
     <title>Overzicht</title>
 </head>
 
@@ -14,76 +14,103 @@
         <a href="www.transavia.com/nl-NL/home/"><img src="images/ic_logo_transavia.png" alt="Transavia Logo"></a>
         <nav>
             <ul>
-                <li><a href="overzicht.html">Home</a></li>
-                <li><a href="alleverhalen.html">Alle verhalen</a></li>
-                <li><a href="aanmelden.html">Aanmelden</a></li>
+                <li><a class="current" href="overzicht.html">Home</a></li>
+                <li><a class="current" href="alleverhalen.html">Alle verhalen</a></li>
+                <li><a class="current" href="aanmelden.html">Aanmelden</a></li>
             </ul>
         </nav>
-
     </header>
-    <main>
-        <div class="groep">
-            <aside>
-                <p>U bent bezig met verhaal ...
-                    <a href="detailpagina.html">Lees verder</a></p>
-            </aside>
 
-            <section id="zoeken">
-                <h2>Welk soort verhaal zoekt u?</h2>
-                <select>
-                    <option value="lengte">Lengte</option>
-                    <option value="kort">Kort</option>
-                    <option value="middel">Middel</option>
-                    <option value="lang">Lang</option>
-                </select>
 
-                <select>
-                    <option value="populair">Populariteit</option>
-                    <option value="populaireerst">Populair eerst</option>
-                    <option value="populairlaatst">Populair laatst</option>
-                </select>
 
-                <select>
-                    <option value="genre">Genre</option>
-                    <option value="grappig">Humor</option>
-                    <option value="serieus">Serieus</option>
-                    <option value="luchtig">Sport</option>
-                </select>
+    <div class="groep">
+        <aside>
+            <p>U bent bezig met verhaal ...
+                <a href="detailpagina.html">Lees verder</a></p>
+        </aside>
 
-                <select>
-                    <option value="leeftijd">Leesduur</option>
-                    <option value="onder18">0-5 minuten</option>
-                    <option value="lang">5-10 minuten</option>
-                    <option value="lang">10-15 minuten</option>
-                </select>
-                <button type="button">Zoeken</button>
-            </section>
-        </div>
+        <section id="zoeken">
+            <h2>Welk soort verhaal zoekt u?</h2>
+            <select>
+                <option value="lengte">Lengte</option>
+                <option value="kort">Kort</option>
+                <option value="middel">Middel</option>
+                <option value="lang">Lang</option>
+            </select>
 
-        <section class="persoonlijk">
-            <article id="links">
-                <h3>Best beoordeeld</h3>
-                <ul>
-                    <li><a href="detailpagina.html">99. Verrassing</a></li>
-                    <li><a href="detailpagina.html">28. Beroemd</a></li>
-                    <li><a href="detailpagina.html">12. Het gebrek</a></li>
-                    <li><a href="detailpagina.html">38. Zoon</a></li>
-                    <li><a href="detailpagina.html">2. Code</a></li>
-                </ul>
+            <select>
+                <option value="populair">Populariteit</option>
+                <option value="populaireerst">Populair eerst</option>
+                <option value="populairlaatst">Populair laatst</option>
+            </select>
+
+            <select>
+                <option value="genre">Genre</option>
+                <option value="grappig">Humor</option>
+                <option value="serieus">Serieus</option>
+                <option value="luchtig">Sport</option>
+            </select>
+
+            <select>
+                <option value="leeftijd">Leesduur</option>
+                <option value="onder18">0-5 minuten</option>
+                <option value="lang">5-10 minuten</option>
+                <option value="lang">10-15 minuten</option>
+            </select>
+            <button type="button">Zoeken</button>
+        </section>
+    </div>
+    <div id="foto">
+        <h1> Speciaal voor u geselecteerd!</h1>
+        <section class="verderlezen">
+            <article id="sport">
+                <a href="detailpagina.html">
+                    <h2>Sport</h2></a>
             </article>
-
-            <article id="rechts">
-                <h3>Meest gelezen</h3>
-                <ul>
-                    <li><a href="detailpagina.html">99. Verrassing</a></li>
-                    <li><a href="detailpagina.html">28. Beroemd</a></li>
-                    <li><a href="detailpagina.html">12. Het gebrek</a></li>
-                    <li><a href="detailpagina.html">38. Zoon</a></li>
-                    <li><a href="detailpagina.html">2. Code</a></li>
-                </ul>
+            <article id="reis">
+                <a href="detailpagina.html">
+                    <h2>Reizen</h2></a>
+            </article>
+            <article id="amsterdam">
+                <a href="detailpagina.html">
+                    <h2>Amsterdam</h2></a>
+            </article>
+            <article id="voetbal">
+                <a href="detailpagina.html">
+                    <h2>Voetbal</h2></a>
             </article>
         </section>
-    </main>
+    </div>
+
+    <section class="persoonlijk">
+        <article id="een">
+            <h3>Best beoordeeld</h3>
+            <ul>
+                <li><a href="detailpagina.html">99. Verrassing</a></li>
+                <li><a href="detailpagina.html">28. Beroemd</a></li>
+                <li><a href="detailpagina.html">12. Het gebrek</a></li>
+                <li><a href="detailpagina.html">38. Zoon</a></li>
+                <li><a href="detailpagina.html">02. Code</a></li>
+            </ul>
+        </article>
+
+        <article id="twee">
+            <h3>Meest gelezen</h3>
+            <ul>
+                <li><a href="detailpagina.html">99. Verrassing</a></li>
+                <li><a href="detailpagina.html">28. Beroemd</a></li>
+                <li><a href="detailpagina.html">12. Het gebrek</a></li>
+                <li><a href="detailpagina.html">38. Zoon</a></li>
+                <li><a href="detailpagina.html">02. Code</a></li>
+            </ul>
+        </article>
+    </section>
+
+
+
+    <footer>
+        <img src="images/ic_logo_transavia.png" alt="Transavia Logo">
+    </footer>
 </body>
 
 </html>

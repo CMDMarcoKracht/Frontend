@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
     <title>Aanmelden</title>
 </head>
 
@@ -24,42 +24,38 @@
     <form>
         <fieldset>
             <legend>Personlijke gegevens</legend>
-            <label>
-                <p>Voornaam</p>
+            <label for="voornaam">
+                Voornaam
             </label>
-            <input type="text">
-            <br>
-            <label>
-                <p>Tussenvoegsel</p>
+            <input type="text" name="voornaam" id="voornaam">
+            <label for="tussenvoegsel">
+                Tussenvoegsel
             </label>
-            <input type="text">
-            <br>
-            <label>
-                <p>Achternaam</p>
+            <input type="text" name="tussenvoegsel" id="tussenvoegsel">
+            <label for="achternaam">
+                Achternaam
             </label>
-            <input type="text">
-            <br>
-            <label>
-                <p>E-mailadres</p>
+            <input type="text" name="achternaam" id="achternaam">
+            <label for="email">
+                E-mailadres
             </label>
-            <input type="text">
-            <br>
+            <input type="text" name="email" id="email">
         </fieldset>
 
         <fieldset>
             <legend>Inlog gegevens</legend>
-            <label>
-                <p>Kies uw wachtwoord</p>
+            <label for="wachtwoord">
+                Kies uw wachtwoord
             </label>
-            <input type="text">
-            <br>
-            <label>
-                <p>Bevestig wachtwoord</p>
+            <input type="text" name="wachtwoord" id="wachtwoord">
+            <label for="bevestig">
+                Bevestig wachtwoord
             </label>
-            <input type="text">
-            <br>
+            <input type="text" name="bevestig" id="bevestig">
         </fieldset>
-        <button>Aanmelden</button>
+        <a href="overzicht.html">
+            <button id="aanmelden">Aanmelden</button>
+        </a>
     </form>
 </body>
 
