@@ -139,13 +139,16 @@ select {
 */
 
 body {
-    transition: all .4s;
     text-align: center;
     font-family: Nexa light;
     background-color: #ABB2B9;
     margin: auto;
     padding: 0;
-    background-image: url(../images/strand.jpg)
+    background-image: url(../images/beach-reads.jpg);
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all .4s;
 }
 
 ul {
@@ -250,28 +253,49 @@ aside {
     font-family: Nexa bold;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     background-color: #322F8F;
     border-radius: 1em;
-    height: 8em;
+    height: 9em;
+    padding: 1em;
+    margin-right: 2em;
 }
 
 aside p {
-    margin: 1em;
-    padding: 1em;
+    margin: auto;
+    width: 100%;
+    margin-top: .5em;
 }
 
-aside a {
-    padding: 1em;
-    display: inline-block;
-    text-decoration: underline;
-    color: white;
+#balk {
+    display: flex;
+    margin: auto;
+    width: 12em;
 }
 
-aside a:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 0.5s;
+#zoekbalk {
+    background-color: whitesmoke;
+    height: 2.1em;
+    bottom: 0em;
+    width: 8em;
+    border-radius: 1em 0 0 1em;
+    border: none;
+}
+
+#zoekbalk:focus {
+    border: none;
+}
+
+.search {
+    height: 1.7em;
+    width: 3em;
+    border-radius: 0 1em 1em 0;
+    margin-left: 0em;
+}
+
+.search p {
+    margin: auto;
+    font-size: 0.8em;
 }
 
 button {
@@ -316,17 +340,17 @@ button:hover {
 }
 
 #sport {
-    background-image: url(../images/sporten.jpg);
+    background-image: url(../images/zombie.jpg);
     background-size: cover;
 }
 
 #reis {
-    background-image: url(../images/reizen.png);
+    background-image: url(../images/frans.jpg);
     background-size: cover;
 }
 
 #amsterdam {
-    background-image: url(../images/amsterdam.jpg);
+    background-image: url(../images/manager.jpg);
     background-size: cover;
 }
 
@@ -336,12 +360,22 @@ button:hover {
 }
 
 .verderlezen h2 {
-    display: flex;
-    justify-content: flex-start;
     font-family: Nexa Bold;
     font-size: 1.2em;
     color: #00D66C;
     padding: 1em;
+    color: white;
+    background-color: #00D66C;
+    height: 3em;
+    border-radius: 0 0 1em 1em;
+    width: 50%;
+    margin: auto;
+}
+
+.verderlezen p:hover {
+    background-color: #322F8F;
+    color: white;
+    transition: .5s;
 }
 
 h1 {
@@ -352,18 +386,35 @@ h1 {
     color: #00D66C;
     background-color: white;
     padding: 1em;
+    margin-top: 1em;
 }
 
 #foto {
     background-color: white;
 }
 
+.knop {
+    font-family: Nexa Bold;
+    font-size: 1em;
+    color: #00D66C;
+    padding: 1em;
+    color: white;
+    background-color: #00D66C;
+    height: 3em;
+    border-radius: .5em;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
 .verhaal {
-    width: 80%;
+    width: 100%;
     margin: auto;
     background: #F2E4D8;
-    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 2em;
+    font-size: 1.2em;
 }
 
 .verhaal>h1 {
@@ -451,6 +502,17 @@ h1 {
     font-family: Nexa bold;
 }
 
+#tijd {
+    width: 5em;
+    top: -1000em;
+    position: relative;
+}
+
+#tijd:hover {
+    width: 5em;
+    top: 0;
+}
+
 
 /*
 ===== H2 =====
@@ -480,7 +542,6 @@ form {
     border-radius: 2em;
     display: flex;
     flex-direction: column;
-    transition: all .5s;
     padding: 1em;
 }
 
@@ -514,7 +575,7 @@ input {
     font-size: 1em;
     margin: auto;
     width: 90%;
-    transition: all .2s;
+    transition: all .3s;
     font-family: Nexa light;
 }
 
@@ -564,6 +625,7 @@ footer img {
 
 @media (max-width: 40em) {
     .groep {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -571,10 +633,33 @@ footer img {
     aside {
         width: 20em;
         margin-bottom: 1em;
+        height: 10em;
+    }
+    aside p {
+        font-size: 1.1em;
+    }
+    #balk {
+        padding-left: 2em;
+        width: 100%;
+        margin: auto;
+    }
+    #zoekbalk {
+        width: 12em;
+        height: 2.75em;
+        border-radius: 1em 0 0 1em;
+    }
+    .search {
+        height: 2.2em;
+        width: 3em;
+        border-radius: 0 1em 1em 0;
+        margin-left: 0em;
+    }
+    .search p {
+        margin: auto;
+        font-size: 0.8em;
     }
     #zoeken {
-        min-width: 18em;
-        max-width: 20em;
+        width: 20em;
     }
     .verderlezen a {
         width: 100vw;
@@ -599,6 +684,9 @@ footer img {
     header img {
         display: none;
     }
+    legend {
+        font-size: 1.5em;
+    }
     input {
         height: 2.75em;
     }
@@ -606,9 +694,13 @@ footer img {
         max-width: 25em;
     }
     select {
-        height: 2em;
+        height: 2.75em;
         font-family: Nexa light;
         font-size: 1em;
+    }
+    button {
+        height: 2em;
+        border-radius: .5em;
     }
 }
 
@@ -622,9 +714,6 @@ footer img {
     nav {
         width: 30em;
     }
-    .groep {
-        width: 80%;
-    }
     aside {
         margin-right: 1em;
     }
@@ -636,16 +725,21 @@ footer img {
     .verderlezen a {
         width: 50vw;
     }
+    .knop {
+        width: 60%;
+    }
 }
 
 @media (max-width: 60em) {
     .groep {
+        width: 100%;
         display: flex;
         margin: auto;
     }
     aside {
-        min-width: 12em;
+        min-width: 15em;
         max-width: 20em;
+        margin-left: 2em;
     }
     #zoeken {
         min-width: 19em;
@@ -666,7 +760,7 @@ footer img {
     }
     .groep {
         display: flex;
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
     form {
